@@ -21,23 +21,29 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: 'release'
+          use-public-rspm: true
 
-      - name: Install Shinylive
-        run: |
-          install.packages("shinylive", repos = "https://cloud.r-project.org")
-        shell: Rscript {0}
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::shinylive
 
       - name: Build Shinylive site
+        shell: Rscript {0}
         run: |
           dir.create("site", showWarnings = FALSE)
-          shinylive::export("unit-circle", "site", subdir = "unit-circle")
-        shell: Rscript {0}
+          shinylive::export(
+            "unit-circle",
+            "site",
+            subdir = "unit-circle"
+          )
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
