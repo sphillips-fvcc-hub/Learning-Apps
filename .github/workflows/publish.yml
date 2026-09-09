@@ -52,6 +52,12 @@ jobs:
             subdir = "x-coordinate-explorer"
           )
 
+          shinylive::export(
+            "sine-function-explorer",
+            "site",
+            subdir = "sine-function-explorer"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
