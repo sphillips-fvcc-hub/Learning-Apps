@@ -39,10 +39,17 @@ jobs:
         shell: Rscript {0}
         run: |
           dir.create("site", showWarnings = FALSE)
+
           shinylive::export(
             "unit-circle",
             "site",
             subdir = "unit-circle"
+          )
+
+          shinylive::export(
+            "x-coordinate-explorer",
+            "site",
+            subdir = "x-coordinate-explorer"
           )
 
       - name: Configure GitHub Pages
