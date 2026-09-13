@@ -58,6 +58,12 @@ jobs:
             subdir = "sine-function-explorer"
           )
 
+          shinylive::export(
+            "trig-function-explorer",
+            "site",
+            subdir = "trig-function-explorer"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
