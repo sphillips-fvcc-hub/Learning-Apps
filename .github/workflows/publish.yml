@@ -64,6 +64,12 @@ jobs:
             subdir = "trig-function-explorer"
           )
 
+          shinylive::export(
+            "y-coordinate-explorer",
+            "site",
+            subdir = "y-coordinate-explorer"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
