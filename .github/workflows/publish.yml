@@ -70,6 +70,12 @@ jobs:
             subdir = "y-coordinate-explorer"
           )
 
+          shinylive::export(
+            "regression-comparison",
+            "site",
+            subdir = "regression-comparison"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
