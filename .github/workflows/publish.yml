@@ -76,6 +76,12 @@ jobs:
             subdir = "regression-comparison"
           )
 
+          shinylive::export(
+            "building-a-polar-graph",
+            "site",
+            subdir = "building-a-polar-graph"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
