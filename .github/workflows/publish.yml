@@ -77,9 +77,39 @@ jobs:
           )
 
           shinylive::export(
-            "building-a-polar-graph",
+            "family-of-polar-curves-explorer",
             "site",
-            subdir = "building-a-polar-graph"
+            subdir = "family-of-polar-curves-explorer"
+          )
+
+          shinylive::export(
+            "polar-curves-circle-explorer",
+            "site",
+            subdir = "polar-curves-circle-explorer"
+          )
+
+          shinylive::export(
+            "polar-curves-lemniscate-explorer",
+            "site",
+            subdir = "polar-curves-lemniscate-explorer"
+          )
+
+          shinylive::export(
+            "polar-curves-limacon-and-cardioid-explorer",
+            "site",
+            subdir = "polar-curves-limacon-and-cardioid-explorer"
+          )
+
+          shinylive::export(
+            "polar-curves-rose-curve-explorer",
+            "site",
+            subdir = "polar-curves-rose-curve-explorer"
+          )
+
+          shinylive::export(
+            "polar-curves-spiral-explorer",
+            "site",
+            subdir = "polar-curves-spiral-explorer"
           )
 
       - name: Configure GitHub Pages
