@@ -141,6 +141,12 @@ jobs:
             "site",
             subdir = "binomial-distribution-explorer"
           )
+
+           shinylive::export(
+            "negative-binomial-distribution-explorer",
+            "site",
+            subdir = "negative-binomial-distribution-explorer"
+          )
           
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
