@@ -129,6 +129,13 @@ jobs:
             "site",
             subdir = "normal-model-explorer"
           )
+
+           shinylive::export(
+            "geometric-model-explorer",
+            "site",
+            subdir = "geometric-model-explorer"
+          )
+          
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
