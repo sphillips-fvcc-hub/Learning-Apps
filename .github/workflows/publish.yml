@@ -147,6 +147,13 @@ jobs:
             "site",
             subdir = "negative-binomial-distribution-explorer"
           )
+
+           shinylive::export(
+            "poisson-distribution-explorer",
+            "site",
+            subdir = "poisson-distribution-explorer"
+          )
+
           
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
