@@ -131,9 +131,9 @@ jobs:
           )
 
            shinylive::export(
-            "geometric-model-explorer",
+            "geometric-distribution-explorer",
             "site",
-            subdir = "geometric-model-explorer"
+            subdir = "geometric-distribution-explorer"
           )
           
       - name: Configure GitHub Pages
