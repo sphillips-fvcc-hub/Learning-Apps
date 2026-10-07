@@ -118,6 +118,12 @@ jobs:
             subdir = "building-a-polar-graph"
           )
 
+          shinylive::export(
+            "distribution-explorer",
+            "site",
+            subdir = "distribution-explorer"
+          )
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
