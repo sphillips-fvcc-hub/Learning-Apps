@@ -135,6 +135,12 @@ jobs:
             "site",
             subdir = "geometric-distribution-explorer"
           )
+
+           shinylive::export(
+            "binomial-distribution-explorer",
+            "site",
+            subdir = "binomial-distribution-explorer"
+          )
           
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
