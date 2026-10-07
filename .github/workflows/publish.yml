@@ -124,6 +124,11 @@ jobs:
             subdir = "distribution-explorer"
           )
 
+          shinylive::export(
+            "normal-model-explorer",
+            "site",
+            subdir = "normal-model-explorer"
+          )
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
