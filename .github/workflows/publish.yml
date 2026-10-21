@@ -154,6 +154,13 @@ jobs:
             subdir = "poisson-distribution-explorer"
           )
 
+
+          shinylive::export(
+            "base-r-ggplot-basic",
+            "site",
+            subdir = "base-r-ggplot-basic"
+          )
+
           
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
