@@ -156,9 +156,9 @@ jobs:
 
 
           shinylive::export(
-            "base-r-ggplot-basic",
+            "base-r-vs-ggplot-basic",
             "site",
-            subdir = "base-r-ggplot-basic"
+            subdir = "base-r-vs-ggplot-basic"
           )
 
           
