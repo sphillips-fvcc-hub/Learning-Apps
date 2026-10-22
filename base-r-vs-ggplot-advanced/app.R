@@ -275,9 +275,10 @@ ui <- fluidPage(
             "Y tick-label angle",
             choices = c(
               "0 degrees" = 0,
-              "45 degrees" = 45,
               "90 degrees" = 90
-            )
+            ),
+            selected = 0
+
           )
         )
       ),
@@ -686,7 +687,8 @@ server <- function(input, output, session) {
       col.main = fg,
       cex.main = s$title_size / 16,
       cex.lab = s$axis_size / 12,
-      cex.axis = s$tick_size / 10
+      cex.axis = s$tick_size / 10,
+      las = if (s$y_angle == 90) 0 else 1
     )
 
     color <- adjustcolor(
@@ -1034,7 +1036,9 @@ server <- function(input, output, session) {
       ),
 
       axis.text.y = element_text(
-        angle = s$y_angle
+        angle = s$y_angle,
+        hjust = 0.5,
+        vjust = 0.5
       ),
 
       panel.grid = if (s$grid) {
