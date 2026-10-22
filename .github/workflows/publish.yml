@@ -161,6 +161,11 @@ jobs:
             subdir = "base-r-vs-ggplot-basic"
           )
 
+          shinylive::export(
+            "base-r-vs-ggplot-advanced",
+            "site",
+            subdir = "base-r-vs-ggplot-advanced"
+          )
           
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
